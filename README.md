@@ -1,4 +1,4 @@
-# HR_Analytic_Project
+# HR_Analytic_Project ( An Interactive Dashboard is created using Power BI)
 Power BI
 ## Objective 
 An HR person wants to know the overall presence percentage of employees in the office. 
@@ -11,10 +11,10 @@ An HR person wants to know the overall presence percentage of employees in the o
 
 How to combine different sheets having different columns into a single sheet. 
 
-•	Bring all the sheets together to transform in the power query editor.
+•	Bring the worksheet containing all the sheets together to transform in the power query editor.
 <br>
 
-•	Duplicate the Worksheet (an original Worksheet named Attendance Sheet) while giving it a different name in the power query editor for example – “template”
+•	Duplicate the Worksheet (an original Worksheet named - Attendance Sheet) while giving it a different name in the power query editor for example – “template”
 <br>
 
 •	Out of 3 sheets in the worksheet the one sheet named “April 2022” has been selected. 
@@ -26,11 +26,17 @@ How to combine different sheets having different columns into a single sheet.
 •	A parameter is created so that through this parameter we can reflect the rule of one sheet in other sheets as well. For example –  parameter name here is “Worksheet”.
 <br>
 
+•	A function is created based on the parameter for example –  function name here is “GetData”
+<br>
+
+•	Through add column the “Invoke Custom Function” containing the function(GetData based on parameter Worksheet is inserted into the original worksheet – Attendance Sheet ), so in future whenever the new data is inserted into this original worksheet, the columns will be aligned according to this parameter rule. 
+<br> 
+
 Data cleaning 
 <br>
-•	Promoting top row as headers 
-<br>
 •	Removing top rows
+<br>
+•	Promoting top row as headers 
 <br>
 •	Determining data type of all columns 
 <br>
@@ -48,7 +54,7 @@ using DAX 4 calculated columns are added to the table
 •	SL Count -  SWITCH()
 <br>
 
-•	Day of Week – Formatting function is used
+•	Day of Week – Format()
 <br>
 
 •	Month – STARTOFMONTH ()
@@ -96,16 +102,18 @@ using DAX the following measures are created
 
 
 
-•	SL (Sick Leave) percentage is increasing, it is lowest in April, while it is increasing moving ahead e.g June. On regular basis it is high on Monday i.e, 1.62%.
+•	SL (Sick Leave) percentage is increasing, it is lowest in April, while it is increasing moving ahead e.g June. On a regular basis it is high on Monday i.e, 1.62%.
 <br>
 
 
 
-•	Two tables are provided through which we can analyse the presence percentage of an individual employee. The Highest present %, The lowest present %
+•	Two tables are provided through which the presence percentage of an individual employee can be analysed. The Highest present %, The lowest present %
+
+<img width="2000" height="1156" alt="image" src="https://github.com/user-attachments/assets/af654c86-72ae-4054-a2a9-d467ca700e94" />
 
 
 ## Conclusion 
-On the basis of the presence percentage in the office showing a decrease in the future, we can plan accordingly to optimise this trend. We can consider directing some percentage work from home. The free space can be lent out to rent and there would be a decrease in the cost of electricity, water supply and maintenance. We can use Tuesday to arrange some team building activity like team lunch. 
+On the basis of the presence percentage in the office showing a decrease in the future, we can plan accordingly to optimise this trend. We can consider directing some percentage of work from home. The free space can be lent out to rent and hence, there would be a decrease in the cost of electricity, water supply and maintenance. We can use Tuesday to arrange some team building activity like team lunch. 
 Sick leave percentage is increasing, like in this dataset May is the month having highest sick leave percentage, the reason behind it may be the seasonal change from spring to summer causing increase in temperature, humidity and spread of allergens. So it is important to know the reason behind it, so that we can take measures accordingly. 
 
 
