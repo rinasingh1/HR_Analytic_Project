@@ -6,7 +6,7 @@ An HR person wants to know the overall presence percentage of employees in the o
 ## Dataset
 <a href = "https://github.com/rinasingh1/HR_Analytic_Project/blob/main/Attendance%20Sheet.xlsx"> View HR analytic Project</a> This project is based on the count of 189 data points. 
 
-## Data Cleaning and processing
+## Data Cleaning and Processing
 <br>
 
 How to combine different sheets having different columns into a single sheet. 
