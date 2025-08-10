@@ -32,7 +32,7 @@ How to combine different sheets having different columns into a single sheet.
 •	Through add column the “Invoke Custom Function” containing the function(GetData based on parameter Worksheet is inserted into the original worksheet – Attendance Sheet ), so in future whenever the new data is inserted into this original worksheet, the columns will be aligned according to this parameter rule. 
 <br> 
 
-Data cleaning 
+Data Cleaning 
 <br>
 •	Removing top rows
 <br>
